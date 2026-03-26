@@ -131,6 +131,8 @@ void verifyPhone_Success() {
     assertEquals("resetToken", response.getBody().getData());
 }
 
+
+//new test cases added 
 @Test
 void resetPassword_Success() {
     ResetPasswordRequest request = new ResetPasswordRequest();
