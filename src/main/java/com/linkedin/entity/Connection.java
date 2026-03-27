@@ -24,6 +24,7 @@ public class Connection {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
+    @Builder.Default
     private ConnectionStatus status = ConnectionStatus.PENDING;
 
     @Column(name = "created_at", updatable = false)

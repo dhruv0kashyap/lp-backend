@@ -13,8 +13,10 @@ public class PostRequest {
     @NotBlank(message = "Please provide a valid content")
     private String content;
 
+    @Builder.Default
     private PostType postType = PostType.POST;
 
+    @Builder.Default
     private PostStatus status = PostStatus.PUBLISHED;
 
     private LocalDateTime scheduledAt;

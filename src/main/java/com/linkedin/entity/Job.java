@@ -32,6 +32,7 @@ public class Job {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "experience_level")
+    @Builder.Default
     private ExperienceLevel experienceLevel = ExperienceLevel.ENTRY;
 
     @Column(nullable = false, columnDefinition = "TEXT")
@@ -51,6 +52,7 @@ public class Job {
     private User postedBy;
 
     @Column(name = "is_active")
+    @Builder.Default
     private Boolean isActive = true;
 
     @OneToMany(mappedBy = "job", cascade = CascadeType.ALL, fetch = FetchType.LAZY)

@@ -30,6 +30,7 @@ public class JobApplication {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
+    @Builder.Default
     private ApplicationStatus status = ApplicationStatus.APPLIED;
 
     @Column(name = "applied_at", updatable = false)

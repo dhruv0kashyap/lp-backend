@@ -34,6 +34,7 @@ public class Experience {
     private LocalDate endDate;
 
     @Column(name = "is_current")
+    @Builder.Default
     private Boolean isCurrent = false;
 
     @Column(columnDefinition = "TEXT")

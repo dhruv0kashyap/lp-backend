@@ -6,7 +6,7 @@ import com.linkedin.dto.response.CommentResponse;
 import com.linkedin.dto.response.PostResponse;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import java.util.List;
+
 
 public interface PostService {
     PostResponse createPost(String email, PostRequest request);

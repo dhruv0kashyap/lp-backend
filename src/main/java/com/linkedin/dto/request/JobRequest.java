@@ -23,6 +23,7 @@ public class JobRequest {
     @NotNull(message = "Please provide a valid jobType")
     private JobType jobType;
 
+    @Builder.Default
     private ExperienceLevel experienceLevel = ExperienceLevel.ENTRY;
 
     @NotBlank(message = "Please provide a valid description")

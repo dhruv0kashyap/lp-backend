@@ -25,10 +25,12 @@ public class Post {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "post_type")
+    @Builder.Default
     private PostType postType = PostType.POST;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "status")
+    @Builder.Default
     private PostStatus status = PostStatus.PUBLISHED;
 
     @Column(name = "scheduled_at")

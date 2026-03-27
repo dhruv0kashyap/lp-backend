@@ -19,6 +19,7 @@ public class ExperienceRequest {
 
     private LocalDate endDate;
 
+    @Builder.Default
     private Boolean isCurrent = false;
 
     private String description;
